@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden; /* 防止滚动条出现 */
+    background-color: #000000; /* 纯黑背景 */
+}
+
+/* 确保 Three.js 创建的 canvas 铺满整个屏幕 */
+canvas {
+    display: block;
+}
+
+/* --- lil-gui 样式调整 (为了更大的界面和更好的显示) --- */
+
+.lil-gui {
+    /* 调整名称标签的宽度 */
+    --name-width: 45%; 
+    font-size: 14px;
+    /* 增加最大宽度，使其比默认值更宽 (解决界面太小的问题) */
+    max-width: 350px !important; 
+}
+
+/* 针对实时显示缩放比例的滑块进行样式调整 */
+.lil-gui .range.read-only .value {
+    background-color: #333; /* 暗色背景 */
+    color: #00ffaa;      /* 鲜明颜色显示数值 */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
